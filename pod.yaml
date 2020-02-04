@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  # Podの名前
+  name: nginx
+spec:
+  # 実行するコンテナの定義
+  containers:
+  - name: nginx
+    image: nginx:1.15.7
+    ports:
+    - containerPort: 80
